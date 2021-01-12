@@ -1,9 +1,8 @@
-from mat_mult.mcm import MCMNaive
+from mat_mult.mcm import naive_mcm
 
 
-def test_naive(test_cases_small):
-    for test in test_cases_small:
+def test_naive(test_cases):
+    for test in test_cases:
         dims = test['dims']
-        solver = MCMNaive()
-        best_cost = solver.get_min_cost(dims=dims)
+        best_cost = naive_mcm(dims=dims)[0]
         assert best_cost == test['cost']
