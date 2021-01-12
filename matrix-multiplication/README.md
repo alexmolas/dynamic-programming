@@ -23,3 +23,8 @@ However, the number of operations to perform is not the same in all the cases!
 In this project I will investigate different techniques to decide which
 is the multiplication order that minimizes de number
 of operations to perform.
+
+# Test:
+
+To run the tests and check that the implementations are correct you just need
+to install `tox` (`pip install tox`), and then run the command `tox` from the command line.
